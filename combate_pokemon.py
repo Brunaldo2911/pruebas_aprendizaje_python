@@ -1,10 +1,8 @@
-
 pokemon_elegido = input("Contra que pokemon quieres luchar? (Pearson / Choclet / Swing ) : ")
 
 vida_pikachu = 100
 vida_enemigo = 0
 ataque_pokemon = 0
-
 
 if pokemon_elegido == "Pearson":
     vida_enemigo = 90
@@ -33,6 +31,7 @@ while vida_pikachu > 0 and vida_enemigo > 0:
 
     print("{} te hace un dano de {}".format(pokemon_elegido, ataque_pokemon))
     vida_pikachu -= ataque_pokemon
+
     print("La vida de Pikachu ahora es de {}".format(vida_pikachu))
 
 if vida_pikachu <= 0:
@@ -41,7 +40,4 @@ if vida_pikachu <= 0:
 elif vida_enemigo <= 0:
     print( "Perdi papu")
 
-
     print("codigo combate")
-
-
